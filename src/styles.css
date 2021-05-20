@@ -1,0 +1,22 @@
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.p-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: center;
+}
+
+.radio {
+  display: flex;
+  flex-direction: row;
+}
+

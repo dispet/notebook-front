@@ -1,0 +1,29 @@
+<div class="p-card">
+  <p-table [value]="contacts" sortField="firstname">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>firstname</th>
+        <th>lastname</th>
+        <th>middlename</th>
+        <th>email</th>
+        <th>phone</th>
+        <th>action</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-contact>
+      <tr>
+        <td>{{contact.firstname}}</td>
+        <td>{{contact.lastname}}</td>
+        <td>{{contact.middlename}}</td>
+        <td>{{contact.arrEmail[contact.emailnum]}}</td>
+        <td>{{contact.arrPhone[contact.phonenum]}}</td>
+        <td>
+            <a routerLink="/contacts/update/{{contact.id}}" class="edit">
+              <i class="pi pi-pencil"></i>
+            </a>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>
+
